@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanzy Furniture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="navbar sticky-top navbar-expand-lg bg-white px-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CHANZY FURNITURE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                    <ul class="navbar-nav mb-2 mb-lg-0 rounded-pill px-5" style="background-color: #f4f4f4;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item" style="display: none;" id="cart">
+                        <a class="nav-link" href="cart.html">Keranjang</a>
+                    </li>
+                    <li class="nav-item" id="dropdown" style="display: none;">
+                        <div class="dropdown-center">
+                            <button class="btn dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #f4f4f4;">
+                            Hello, Chandra
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="profile.html">Profil</a></li>
+                                <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="navbar-right">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link text-white px-3 rounded-pill" href="cart.html" style="background-color: var(--black);">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <div class="dropdown-center">
+                                <button class="btn dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #f4f4f4;">
+                                Hello, Chandra
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="profile.html">Profil</a></li>
+                                    <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="hero" class="container-fluid pt-3 px-4">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card border-0">
+                        <div class="card-body p-0">
+                            <img src="https://i.pinimg.com/564x/fe/dd/cf/feddcf836ae4923d537f1628a69cd3be.jpg" alt="" class="rounded-2 w-100">
+                        </div>
+                        <div class="title-hero">
+                            <p class="fs-2 pb-0 mb-0">
+                                Meja Kayu Jati Modern & Sofa Sectional
+                            </p>
+                            <p class="desc-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <a href="detail_product.html" class="btn btn-light rounded-pill">
+                                Lihat Produk
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="card card-right">
+                        <div class="card-body">
+                            <p class="title-card-right">
+                                Temukan Semua Kebutuhan Furniture <br>
+                                Hanya Di CHANZY FURNITURE
+                            </p>
+                            <div class="d-flex justify-content-arround align-items-center gap-2 mt-5 nav-card">
+                                <a class="btn btn-outline-dark rounded-pill active" id="btn-exclusive">
+                                    Exclusive
+                                </a>
+                                <a class="btn btn-outline-dark rounded-pill" id="btn-limited-edition">
+                                    Edisi Terbatas
+                                </a>
+                                <a class="btn btn-outline-dark rounded-pill" id="btn-discount">
+                                    Harga Diskon
+                                </a>
+                                <a class="btn btn-outline-dark rounded-pill" id="btn-must-have">
+                                    Harus Punya !
+                                </a>
+                            </div>
+                            <div class="item-card mt-5" id="card-exclusive">
+                                <div class="card border-0">
+                                    <div class="card-body d-flex justify-content-between">
+                                        <div class="left">
+                                            <div>
+                                                <a href="" class="btn rounded-pill fw-semibold btn-category" style="background-color: #f4f4f4;">
+                                                    Exclusive
+                                                </a>
+                                            </div>
+                                            <div class="mt-5 desc-prod">
+                                                <p style="font-size: 25px; font-weight: 500;">
+                                                    Meja Kopi Minimalis
+                                                </p>
+                                                <p>
+                                                    Meja kecil yang terletak di depan sofa, dirancang dengan gaya minimalis.
+                                                </p>
+                                                <a href="detail_product.html" class="btn" style="background-color: #f4f4f4; border-radius: 100%;">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="https://i.pinimg.com/564x/a5/b3/54/a5b354ebe027710fc6bc2cb2ac09b3ee.jpg" alt="" class="rounded-2 w-75">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-card mt-5" id="card-limited" style="display: none;">
+                                <div class="card border-0">
+                                    <div class="card-body d-flex justify-content-between">
+                                        <div class="left">
+                                            <div>
+                                                <a href="" class="btn rounded-pill fw-semibold btn-category" style="background-color: #f4f4f4;">
+                                                    Edisi Terbatas
+                                                </a>
+                                            </div>
+                                            <div class="mt-5 desc-prod">
+                                                <p style="font-size: 25px; font-weight: 500;">
+                                                    Rak Buku Minimalis
+                                                </p>
+                                                <p>
+                                                    Rak buku yang memiliki beberapa ruang, dirancang dengan gaya minimalis.
+                                                </p>
+                                                <a href="detail_product.html" class="btn" style="background-color: #f4f4f4; border-radius: 100%;">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="https://i.pinimg.com/1200x/80/f9/78/80f9783ac5c0d8499c1eacffa53712d6.jpg" alt="" class="rounded-2 w-75">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-card mt-5" id="card-discount" style="display: none;">
+                                <div class="card border-0">
+                                    <div class="card-body d-flex justify-content-between">
+                                        <div class="left">
+                                            <div>
+                                                <a href="" class="btn rounded-pill fw-semibold btn-category" style="background-color: #f4f4f4;">
+                                                    Harga Diskon
+                                                </a>
+                                            </div>
+                                            <div class="mt-5 desc-prod">
+                                                <p style="font-size: 25px; font-weight: 500;">
+                                                    Kursi Dan Meja Teras
+                                                </p>
+                                                <p>
+                                                    Furniture yang dirancang khusus untuk digunakan di area luar ruangan, seperti teras, balkon, atau taman
+                                                </p>
+                                                <a href="detail_product.html" class="btn" style="background-color: #f4f4f4; border-radius: 100%;">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="https://i.pinimg.com/1200x/f9/b5/7a/f9b57a31ae6e57f578657d07154df7df.jpg" alt="" class="rounded-2 w-75">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-card mt-5" id="card-must-have" style="display: none;">
+                                <div class="card border-0">
+                                    <div class="card-body d-flex justify-content-between">
+                                        <div class="left">
+                                            <div>
+                                                <a href="" class="btn rounded-pill fw-semibold btn-category" style="background-color: #f4f4f4;">
+                                                    Harus Punya!
+                                                </a>
+                                            </div>
+                                            <div class="mt-5 desc-prod">
+                                                <p style="font-size: 25px; font-weight: 500;">
+                                                    Meja Makan
+                                                </p>
+                                                <p>
+                                                    Furniture penting di ruang makan yang dirancang untuk digunakan sebagai tempat makan bersama keluarga, teman, atau tamu
+                                                </p>
+                                                <a href="detail_product.html" class="btn" style="background-color: #f4f4f4; border-radius: 100%;">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img src="https://i.pinimg.com/1200x/3b/3e/6f/3b3e6fa66416422f988c3d4391c890df.jpg" alt="" class="rounded-2 w-75">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="catalog" class="container-fluid pt-5 pb-5 px-4">            
+                    <p class="title-catalog fs-3">
+                        Beberapa Catalog Yang Kami Sediakan
+                    </p>
+                    <p class="desc-catalog">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt accusantium porro harum veritatis id illo ea. Fugiat reiciendis voluptas iusto quod ipsa soluta veritatis beatae incidunt id, nesciunt consequatur consectetur?
+                    </p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body card-one">
+                            <div class="d-flex justify-content-between align-items-center p-3 title-card-one">
+                                <p class="text-white fs-5">
+                                    Rak Serbaguna
+                                </p>
+                                <a href="detail_product.html" class="btn btn-light rounded-pill">
+                                    Lihat Produk
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body card-two">
+                            <div class="d-flex justify-content-between align-items-center p-3 title-card-one">
+                                <p class="text-white fs-5">
+                                    Meja Aesthetic
+                                </p>
+                                <a href="detail_product.html" class="btn btn-light rounded-pill">
+                                    Lihat Produk
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body card-three">
+                            <div class="d-flex justify-content-between align-items-center p-3 title-card-one">
+                                <p class="text-white fs-5">
+                                    Spring Bed
+                                </p>
+                                <a href="detail_product.html" class="btn btn-light rounded-pill">
+                                    Lihat Produk
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body card-four">
+                            <div class="d-flex justify-content-between align-items-center p-3 title-card-one">
+                                <p class="text-white fs-5">
+                                    Laci Serbaguna
+                                </p>
+                                <a href="detail_product.html" class="btn btn-light rounded-pill">
+                                    Lihat Produk
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div style="background-color: var(--black); border-radius: 20px 20px 0px 0px;">
+                <div class="p-5">
+                    <h4 class="fw-bold text-center text-white">
+                        Telah Dipercaya Sekitar 500+ Konsumen
+                    </h4>
+                    <h4 class="fw-bold text-center text-white">
+                        <span class="fw-light" style="letter-spacing: 5px;">CHANZY FURNITURE</span> SIAP UNTUK LEBIH BERSINAR
+                    </h4>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-5 pb-3" style="font-size: 2.5rem;">
+                    <a href="https://facebook.com" target="_blank" style="color: white; text-decoration: none;">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://whatsapp.com" target="_blank" style="color: white; text-decoration: none;">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" style="color: white; text-decoration: none;">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+<script>
+    $( document ).ready(function() {
+    let counter = 0;
+    console.log( "ready!" );
+    let btnExclusive = $('#btn-exclusive');
+    let cardExclusive = $('#card-exclusive');
+    let btnLimitedEdtion = $('#btn-limited-edition');
+    let cardLimitedEdition = $('#card-limited');
+    let btnDiscount = $('#btn-discount');
+    let cardDiscount = $('#card-discount');
+    let btnMustHave = $('#btn-must-have');
+    let cardMustHave = $('#card-must-have');
+
+    btnLimitedEdtion.click(function () {
+        btnLimitedEdtion.addClass('active');
+        cardLimitedEdition.show();
+        btnExclusive.removeClass('active');
+        cardExclusive.hide();
+        btnDiscount.removeClass('active');
+        cardDiscount.hide();
+        btnMustHave.removeClass('active');
+        cardMustHave.hide();
+    });
+    btnExclusive.click(function () {
+        btnExclusive.addClass('active');
+        cardExclusive.show();
+        btnLimitedEdtion.removeClass('active');
+        cardLimitedEdition.hide();
+        btnDiscount.removeClass('active');
+        cardDiscount.hide();
+        btnMustHave.removeClass('active');
+        cardMustHave.hide();
+    });
+    btnDiscount.click(function () {
+        btnDiscount.addClass('active');
+        cardDiscount.show();
+        btnExclusive.removeClass('active');
+        cardExclusive.hide();
+        btnLimitedEdtion.removeClass('active');
+        cardLimitedEdition.hide();
+        btnMustHave.removeClass('active');
+        cardMustHave.hide();
+    });
+    btnMustHave.click(function () {
+        btnMustHave.addClass('active');
+        cardMustHave.show();
+        btnDiscount.removeClass('active');
+        cardDiscount.hide();
+        btnExclusive.removeClass('active');
+        cardExclusive.hide();
+        btnLimitedEdtion.removeClass('active');
+        cardLimitedEdition.hide();
+    });
+});
+</script>
+</html>

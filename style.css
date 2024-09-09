@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --poppins : "Poppins", sans-serif;
+    --black : #222831;
+}
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+}
+
+nav .container-fluid a.navbar-brand{
+    font-family: var(--poppins);
+    letter-spacing: 5px;
+}
+.nav-link{
+    font-family: var(--poppins);
+    font-weight: 500;
+    color: var(--black);
+}
+.nav-link:hover{
+    font-family: var(--poppins);
+    font-weight: 500;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--black);
+}
+.title-hero{
+    padding-left: 1rem;
+    position: absolute;
+    font-family: var(--poppins);
+    bottom: 1rem;
+    color: white;
+}
+.card-right{
+    background-color: #f4f4f4;
+    border: none;
+    padding: 2rem;
+}
+.title-card-right{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: var(--poppins);
+}
+#catalog .card{
+    height: 450px;
+}
+#catalog .card .card-one{
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url('https://i.pinimg.com/564x/76/b5/11/76b5119a3b34002336665f496b350def.jpg');
+}
+#catalog .card .card-two{
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url('https://i.pinimg.com/564x/b1/ed/01/b1ed01ffb32c49c839ac474bc6c7abec.jpg');
+}
+#catalog .card .card-three{
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url('https://i.pinimg.com/564x/43/8b/22/438b2205c5670f5acf478f5489a89076.jpg');
+}
+#catalog .card .card-four{
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: url('https://i.pinimg.com/564x/40/3e/a3/403ea38c429b1457ece6fb127646f107.jpg');
+}
+#catalog .card img{
+    height: 450px;
+}
+
+@media (min-width: 992px) and (max-width: 1024px){ 
+    .title-hero .fs-2{
+        font-size: 17px !important;
+    }
+    .title-hero .desc-title{
+        font-size: 12px !important;
+    }
+    .card-right{
+        padding: 10px;
+    }
+    .title-card-right{
+        font-size: 20px;
+    }
+    .card-right .nav-card{
+        margin-top: 1rem !important;
+    }
+    .card-right .nav-card a{
+        font-size: 12px;
+    }
+    .card-right .item-card{
+        margin-top: 1rem !important;
+    }
+    .card-right .item-card .desc-prod{
+        margin-top: 1rem !important;
+    }
+    .card-right .item-card p{
+        font-size: 12px !important;
+    }
+    .title-catalog{
+        font-size: 15px !important;
+    }
+    .desc-catalog{
+        font-size: 12px !important;
+    }
+    #catalog .card{
+        height: 300px;
+    }
+    #catalog .card .card-one,
+    #catalog .card .card-two,
+    #catalog .card .card-three,
+    #catalog .card .card-four{
+        background-position: top;
+    }
+    #catalog .card .card-body .title-card-one{
+        display: block !important;
+    }
+    #catalog .card .card-body .text-white{
+        margin-bottom: 12rem;
+    }
+}
+@media (min-width: 768px) and (max-width:993px){
+    .navbar-right{
+        display: none;
+    }
+    #navbarCenteredExample ul{
+        background-color: white !important;
+        padding: 0 0rem !important;
+        margin-top: 1rem;
+        border-radius: 0% !important;
+    }
+    #navbarCenteredExample #cart,#navbarCenteredExample #dropdown{
+        display: block !important;
+    }
+    .title-hero .fs-2{
+        font-size: 12px !important;
+    }
+    .title-hero a.btn{
+        font-size: 9px !important;
+    }
+    .title-hero .desc-title{
+        font-size: 9px !important;
+    }
+    .card-right{
+        padding: 10px;
+    }
+    .title-card-right{
+        font-size: 14px;
+    }
+    .btn-category{
+        font-size: 9px !important;
+    }
+    .card-right .nav-card{
+        margin-top: 1rem !important;
+    }
+    .card-right .nav-card a{
+        font-size: 9px;
+    }
+    .card-right .item-card{
+        margin-top: 1rem !important;
+    }
+    .card-right .item-card .desc-prod{
+        margin-top: 1rem !important;
+    }
+    .card-right .item-card p{
+        font-size: 12px !important;
+    }
+    .title-catalog{
+        font-size: 9px !important;
+    }
+    .desc-catalog{
+        font-size: 12px !important;
+    }
+    #catalog .card{
+        height: 300px;
+    }
+    #catalog .card .card-one,
+    #catalog .card .card-two,
+    #catalog .card .card-three,
+    #catalog .card .card-four{
+        background-position: top;
+    }
+    #catalog .card .card-body .title-card-one{
+        display: block !important;
+    }
+    #catalog .card .card-body .text-white{
+        font-size: 16px !important;
+        margin-bottom: 13rem;
+    }
+    #catalog .card .card-body a{
+        font-size: 11px !important;
+    }
+}
+@media (min-width: 425px) and (max-width:768px){
+    .navbar-right{
+        display: none;
+    }
+    #navbarCenteredExample ul{
+        background-color: white !important;
+        padding: 0 0rem !important;
+        margin-top: 1rem;
+        border-radius: 0% !important;
+    }
+    #navbarCenteredExample #cart,#navbarCenteredExample #dropdown{
+        display: block !important;
+    }
+    #hero .row .col-md-5{
+        margin-bottom: 1rem;
+    }
+    .title-hero .fs-2{
+        font-size: 16px !important;
+    }
+    .title-hero .desc-title{
+        font-size: 10px !important;
+    }
+    .title-hero a.btn{
+        font-size: 12px !important;
+    }
+    .card-right{
+        padding: 10px;
+    }
+    .title-card-right{
+        font-size: 14px;
+    }
+    .card-right #btn-exclusive{
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    .btn-category{
+        font-size: 10px !important;
+    }
+    .card-right .nav-card{
+        margin-top: 1rem !important;
+    }
+    .card-right .nav-card a{
+        font-size: 9px;
+    }
+    .card-right .item-card{
+        margin-top: 1rem !important;
+    }
+    .card-right .item-card .desc-prod{
+        margin-top: 1rem !important;
+    }
+    .card-right .item-card p{
+        font-size: 12px !important;
+    }
+    .title-catalog{
+        font-size: 15px !important;
+    }
+    .desc-catalog{
+        font-size: 10px !important;
+    }
+    #catalog .card{
+        height: 300px;
+    }
+    #catalog .card .card-one,
+    #catalog .card .card-two,
+    #catalog .card .card-three,
+    #catalog .card .card-four{
+        background-position: center;
+    }
+    #catalog .col-md-3{
+        margin-top: 1rem;
+    }
+    #catalog .card .card-body .title-card-one{
+        display: block !important;
+    }
+    #catalog .card .card-body .text-white{
+        font-size: 16px !important;
+        margin-bottom: 13rem;
+    }
+    #catalog .card .card-body a{
+        font-size: 11px !important;
+    }
+}
